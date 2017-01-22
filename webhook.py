@@ -12,8 +12,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-# create console handler
-handler = logging.StreamHandler()
+# create file handler
+handler = logging.FileHandler('/var/log/webhook.log')
 handler.setLevel(logging.ERROR)
 
 # create logging format
