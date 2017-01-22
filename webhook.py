@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 
 # create file handler
-handler = logging.FileHandler('/var/log/webhook.log')
+handler = logging.FileHandler('/var/www/webhook/webhook.log')
 handler.setLevel(logging.ERROR)
 
 # create logging format
